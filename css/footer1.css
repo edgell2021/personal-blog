@@ -1,0 +1,15 @@
+.flex-footer {
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+  }
+
+@media (min-width:576px){
+  .flex-footer {
+    display: flex;
+    height: 200px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
