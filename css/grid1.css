@@ -2,19 +2,59 @@
     display:grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(6, 200px);
-    grid-column-gap: 0;
-    grid-row-gap: 0;
-    margin: 50px 0;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin: 50px auto;
 }
 
 .cards {
-    border:1px solid red;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card1 {
+    background-image: url("../images/chicago.JPG");
+    background-position: 50%;
+    transform: rotate(180deg);
+}
+
+.card2 {
+    background-image: url("../images/spices.JPG");
+}
+
+.card3 {
+    background-image: url("../images/israel.JPG");
+}
+
+.card4 {
+    background-image: url("../images/bike.JPG");
+}
+
+.card5 {
+    background-image: url("../images/glass.JPG");
+    background-position-y: 29%;
+}
+
+.card6 {
+    background-image: url("../images/troll.JPG");
+    background-position: 62%;
+    transform: rotate(180deg);
+}
+
+@media (min-width:426px){
+    .card-container {
+        grid-template-columns: 49% 49%;
+        grid-template-rows: repeat(6, 300px);
+    }
 }
 
 @media (min-width:768px){
     .card-container {
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 200px 200px;
+    }
+    .cards {
+        margin-top:0;
     }
     .card1 {
         grid-area: 1 / 1 / 2 / 3; 
