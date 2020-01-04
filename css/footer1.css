@@ -1,13 +1,25 @@
 .flex-footer {
-    display: flex;
-    flex-direction: column;
-  }
+  display: flex;
+  flex-direction: column;
+}
 
-@media (min-width:576px){
+.footer-info > ul {
+  padding-left: 0;
+}
+
+.footer-header {
+  color: #fff;
+}
+
+.socialmediaicons > li {
+  display: inline-block;
+  padding-right: 30px;
+}
+
+@media (min-width: 576px) {
   .flex-footer {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-around;
   }
 }

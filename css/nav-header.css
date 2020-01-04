@@ -1,0 +1,20 @@
+.font-white, .font-white > li > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.font-white > li > a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.nav > ul > li {
+    display:inline-block;
+}
+
+
+h1 {
+    color: #0f4c81;
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+}

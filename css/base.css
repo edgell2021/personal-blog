@@ -1,0 +1,11 @@
+.blue-background {
+    background-color: #0f4c81;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
