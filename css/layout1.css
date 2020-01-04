@@ -1,0 +1,25 @@
+.container {
+    display: grid;
+    grid-template-rows: 50px 200px auto 150px; 
+    grid-template-areas:
+    "nav nav nav nav nav nav nav nav"
+     "hd hd hd hd hd hd hd hd"
+     "main main main main main main main main"
+     "ft ft ft ft ft ft ft ft";
+}
+
+.nav {
+    grid-area:nav;
+}
+
+.header{
+    grid-area:hd;
+}
+
+.main {
+    grid-area:main;
+}
+
+.flex-footer{  
+    grid-area:ft;
+}
