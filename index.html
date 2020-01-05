@@ -1,97 +1,165 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width">
-        <title>Personal Blog</title>
-        <link href="https://fonts.googleapis.com/css?family=Acme|Cabin:700i|Monoton|Poppins&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="css/style1.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div class="container">
-            <nav class="nav blue-background">
-                <ul class="font-white">
-                    <li><a>Home</a></li>
-                    <li><a href="#category1">Travel</a></li>
-                </u class="font-white">
-            </nav>
-            <div class="wrapper">
-                <header class="header"><h1>Personal Blog Website</h1></header>
-                <div class="main">
-                    <h2 id="category1">Travel</h2>
-                    <div class="card-container">
-                        <a href="#" class="cards card1">
-                            <div class="overlay">
-                                <div class="card-text rotate-text">
-                                    <h3>Chicago</h3>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="cards card2">
-                            <div class="overlay">
-                                <div class="card-text">
-                                    <h3>Hanoi</h3>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="cards card3">
-                            <div class="overlay">
-                                <div class="card-text">
-                                    <h3>Jerusalem</h3>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="cards card4">
-                            <div class="overlay">
-                                <div class="card-text">
-                                    <h3>Vail</h3>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="cards card5">
-                            <div class="overlay">
-                                <div class="card-text">
-                                    <h3>Asheville</h3>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="cards card6">
-                            <div class="overlay">
-                                <div class="card-text rotate-text">
-                                    <h3>Seattle</h3>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <footer class="flex-footer blue-background">
-                 <div class="footer-info">
-                    <h3 class="footer-header">About</h3>
-                    <ul class="font-white">
-                        <li><a href="#">My Story</a></li>
-                        <li><a href="#">Contact Me</a></li>
-                        <li><a href="#">Subscribe</a></li>
-                    </ul>
-                </div>
-                <div class="footer-info">
-                     <h3 class="footer-header">Favorite Things</h3>
-                     <ul class="font-white">
-                         <li><a href="https://www.buzzfeed.com/kaelintully/bobby-flay-is-the-best-say-cheddar-biscuit-boy-if-you-agree" target="_blank" rel="noopener noreferrer">Dogs</a></li>
-                        <li><a href="https://www.fodors.com/" target="_blank" rel="noopener noreferrer">Travel</a></li>
-                        <li><a href="https://www.vulture.com/article/best-british-comedy-shows.html" target="_blank" rel="noopener noreferrer">Laughter</a></li>
-                    </ul>
-                </div>
-                <div class="footer-info">
-                    <h3 class="footer-header">Follow</h3>
-                    <ul class="font-white socialmediaicons">
-                        <li><a aria-label="facebook icon" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="fa fa-facebook"></a></li>
-                        <li><a aria-label="twitter icon" href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" class="fa fa-twitter"></a></li>
-                        <li><a aria-label="instagram icon" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="fa fa-instagram"></a></li>
-                    </ul>
-                </div>
-            </footer>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Personal Blog</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Acme|Cabin:700i|Monoton|Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="css/style1.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav-flex blue-background">
+        <ul class="font-white">
+          <li><a>Home</a></li>
+          <li class="mobile-hide"><a href="#category1">Travel</a></li>
+        </ul>
+        <div class="title font-white">Personal Blog</div>
+        <div class="small-hide">
+          <a class="font-white" href="#category1">Travel</a>
         </div>
-    </body>
+      </nav>
+      <div class="hero">
+        <div class="hero-content font-white">
+          <h1>Garden Visits</h1>
+          <p>
+            Cupcake ipsum dolor. Sit amet sesame snaps jelly beans chocolate
+            lemon drops tootsie roll topping sesame snaps. Gummies pudding pie.
+            Wafer marshmallow toffee dessert carrot cake marzipan. Sweet roll
+            muffin candy canes chupa chups cotton candy wafer.
+          </p>
+          <a role="button" href="#" class="hero-button font-white"
+            >Learn More</a
+          >
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="main">
+          <h2 class="header-travel" id="category1">Travel</h2>
+          <div class="card-container">
+            <a href="#" class="cards card1">
+              <div class="overlay">
+                <div class="card-text rotate-text">
+                  <h3>Chicago</h3>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="cards card2">
+              <div class="overlay">
+                <div class="card-text">
+                  <h3>Hanoi</h3>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="cards card3">
+              <div class="overlay">
+                <div class="card-text">
+                  <h3>Jerusalem</h3>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="cards card4">
+              <div class="overlay">
+                <div class="card-text">
+                  <h3>Vail</h3>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="cards card5">
+              <div class="overlay">
+                <div class="card-text">
+                  <h3>Asheville</h3>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="cards card6">
+              <div class="overlay">
+                <div class="card-text rotate-text">
+                  <h3>Seattle</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <footer class="flex-footer blue-background">
+        <div class="footer-info">
+          <h3 class="footer-header">About</h3>
+          <ul class="font-white">
+            <li><a href="#">My Story</a></li>
+            <li><a href="#">Contact Me</a></li>
+            <li><a href="#">Subscribe</a></li>
+          </ul>
+        </div>
+        <div class="footer-info">
+          <h3 class="footer-header">Favorite Things</h3>
+          <ul class="font-white">
+            <li>
+              <a
+                href="https://www.buzzfeed.com/kaelintully/bobby-flay-is-the-best-say-cheddar-biscuit-boy-if-you-agree"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Dogs</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.fodors.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Travel</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.vulture.com/article/best-british-comedy-shows.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Laughter</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-info">
+          <h3 class="footer-header">Follow</h3>
+          <ul class="font-white socialmediaicons">
+            <li>
+              <a
+                aria-label="facebook icon"
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="fa fa-facebook"
+              ></a>
+            </li>
+            <li>
+              <a
+                aria-label="twitter icon"
+                href="https://www.twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="fa fa-twitter"
+              ></a>
+            </li>
+            <li>
+              <a
+                aria-label="instagram icon"
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="fa fa-instagram"
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

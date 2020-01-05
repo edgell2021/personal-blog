@@ -1,20 +1,51 @@
-.font-white, .font-white > li > a {
-    color: #fff;
-    text-decoration: none;
+.nav-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-flex > ul {
+  padding-left: 15px;
+}
+
+.nav-flex > ul > li {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.title {
+  width: 75%;
+  text-align: center;
+  font-family: "Cabin", sans-serif;
+  font-size: 26px;
+}
+
+.font-white,
+.font-white > li > a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .font-white > li > a:hover {
-    color: #fff;
-    text-decoration: underline;
+  color: #fff;
+  text-decoration: underline;
 }
 
-.nav > ul > li {
-    display:inline-block;
+@media (min-width: 576px) {
+  .title {
+    width: calc(75% - 145px);
+  }
 }
 
+@media (min-width: 768px) {
+  .title {
+    width: calc(82% - 145px);
+    font-size: 36px;
+  }
+}
 
-h1 {
-    color: #0f4c81;
-    font-family: 'Cabin', sans-serif;
-    text-align: center;
+@media (min-width: 992px) {
+  .title {
+    width: calc(90% - 145px);
+  }
 }

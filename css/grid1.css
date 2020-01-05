@@ -1,3 +1,7 @@
+.header-travel {
+  color: #0f4c81;
+}
+
 .card-container {
   display: grid;
   grid-template-columns: 100%;

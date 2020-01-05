@@ -3,6 +3,10 @@
   flex-direction: column;
 }
 
+.footer-info {
+  margin-left: 15px;
+}
+
 .footer-info > ul {
   padding-left: 0;
 }
@@ -16,10 +20,19 @@
   padding-right: 30px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 425px) {
   .flex-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+  }
+  .socialmediaicons > li {
+    display: block;
+  }
+}
+
+@media (min-width: 576px) {
+  .socialmediaicons > li {
+    display: inline-block;
   }
 }
