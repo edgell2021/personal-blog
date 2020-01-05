@@ -14,12 +14,12 @@
 
 .main {
   grid-area: main;
-  background-color: purple;
+  background-color: #d9d9d6;
 }
 
 .side {
   grid-area: side;
-  background-color: purple;
+  background-color: #d9d9d6;
 }
 
 .flex-footer {
