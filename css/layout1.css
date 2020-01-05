@@ -1,27 +1,33 @@
 .container {
-    display: grid;
-    grid-template-rows: 40px auto 150px; 
-    grid-template-areas:
+  display: grid;
+  grid-template-rows: 40px auto auto;
+  grid-template-areas:
     "nav nav nav nav nav nav nav nav"
-     "main main main main main main main main"
-     "ft ft ft ft ft ft ft ft";
+    "main main main main main main main main"
+    "ft ft ft ft ft ft ft ft";
 }
 
 .nav {
-    grid-area: nav;
+  grid-area: nav;
 }
 
 .wrapper {
-    grid-area: main;
+  grid-area: main;
 }
 
-.flex-footer{  
-    grid-area: ft;
+.flex-footer {
+  grid-area: ft;
 }
 
-@media (min-width:1200px) {
-    .wrapper {
-        margin: 0 auto;
-        width:  1200px;
-    }
+@media (min-width: 576px) {
+  .container {
+    grid-template-rows: 40px auto 150px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    margin: 0 auto;
+    width: 1200px;
+  }
 }
