@@ -1,82 +1,115 @@
 .card-container {
-    display:grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(6, 200px);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(6, 200px);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin-bottom: 50px;
 }
 
 .cards {
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.rotate-text {
+  transform: rotate(180deg);
+  padding-bottom: 50px;
+}
+
+.card-text {
+  display: none;
+  padding-top: 65px;
+}
+
+.cards:hover > .overlay {
+  background-color: #000;
+  opacity: 0.7;
+  transition: all 0.5s ease-in-out;
+}
+
+.cards:hover > .overlay > .card-text {
+  display: block;
+  margin: 0 3%;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
 }
 
 .card1 {
-    background-image: url("../images/chicago.JPG");
-    background-position: 50%;
-    transform: rotate(180deg);
+  background-image: url("../images/chicago.JPG");
+  background-position: 50%;
+  transform: rotate(180deg);
 }
 
 .card2 {
-    background-image: url("../images/spices.JPG");
+  background-image: url("../images/spices.JPG");
 }
 
 .card3 {
-    background-image: url("../images/israel.JPG");
+  background-image: url("../images/israel.JPG");
 }
 
 .card4 {
-    background-image: url("../images/bike.JPG");
+  background-image: url("../images/bike.JPG");
 }
 
 .card5 {
-    background-image: url("../images/glass.JPG");
-    background-position-y: 29%;
+  background-image: url("../images/glass.JPG");
+  background-position-y: 29%;
 }
 
 .card6 {
-    background-image: url("../images/troll.JPG");
-    background-position: 62%;
-    transform: rotate(180deg);
+  background-image: url("../images/troll.JPG");
+  background-position: 62%;
+  transform: rotate(180deg);
 }
 
-@media (min-width:426px){
-    .card-container {
-        grid-template-columns: 49% 49%;
-        grid-template-rows: repeat(6, 300px);
-    }
+@media (min-width: 426px) {
+  .card-container {
+    grid-template-columns: 49% 49%;
+    grid-template-rows: repeat(6, 300px);
+  }
 }
 
-@media (min-width:768px){
-    .card-container {
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: 200px 200px;
-    }
-    .cards {
-        margin-top:0;
-    }
-    .card1 {
-        grid-area: 1 / 1 / 2 / 3; 
-    }
-    
-    .card2 {
-        grid-area: 1 / 3 / 2 / 4; 
-    }
-    
-    .card3 {
-        grid-area: 1 / 4 / 2 / 6; 
-    }
-    
-    .card4 {
-        grid-area: 2 / 1 / 3 / 2; 
-    }
-    
-    .card5 {
-        grid-area: 2 / 2 / 3 / 5; 
-    }
-    
-    .card6 {
-        grid-area: 2 / 5 / 3 / 7; 
-    }
+@media (min-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 200px 200px;
+  }
+  .cards {
+    margin-top: 0;
+  }
+  .card1 {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  .card2 {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+
+  .card3 {
+    grid-area: 1 / 4 / 2 / 6;
+  }
+
+  .card4 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .card5 {
+    grid-area: 2 / 2 / 3 / 5;
+  }
+
+  .card6 {
+    grid-area: 2 / 5 / 3 / 7;
+  }
 }
