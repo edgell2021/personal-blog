@@ -85,6 +85,12 @@
   }
 }
 
+@media (min-width: 576px) {
+  .main {
+    margin: 100px auto 140px;
+  }
+}
+
 @media (min-width: 768px) {
   .card-container {
     grid-template-columns: repeat(5, 1fr);

@@ -1,0 +1,59 @@
+.main-content-container {
+  width: 86%;
+  margin: 50px auto;
+  padding: 30px 0;
+  background-color: #fff;
+}
+
+.main-content-container > h1 {
+  padding: 0 15px;
+  color: #0f4c81;
+}
+
+.main-content-img {
+  background-image: url("../images/vines.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
+.main-content-intro,
+.main-content {
+  padding: 0 15px;
+}
+
+.main-content-img-quote {
+  display: flex;
+  height: auto;
+}
+
+.main-content-img-container {
+  display: none;
+}
+
+.main-content-quote {
+  color: #fff;
+  text-align: center;
+  font-family: "Cabin", sans-serif;
+  font-size: 26px;
+}
+
+@media (min-width: 768px) {
+  .main-content-img-container {
+    display: inline-block;
+    width: 29%;
+    background-image: url("../images/glass.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .main-content-quote {
+    width: 71%;
+  }
+}
+
+@media (min-width: 992px) {
+  .main-content-container {
+    padding: 50px 0;
+  }
+}

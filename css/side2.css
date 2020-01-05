@@ -1,0 +1,12 @@
+.side-content-container {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .side-content-container {
+    display: block;
+    width: 86%;
+    margin: 50px auto;
+    background-color: #fff;
+  }
+}

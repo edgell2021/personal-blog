@@ -27,8 +27,16 @@
 }
 
 @media (min-width: 768px) {
+  .hero-content > h1 {
+    font-size: 40px;
+  }
+
+  .hero-content > p {
+    width: 75%;
+  }
+
   .hero-button {
-    margin: 0 auto;
+    margin: 37px auto;
   }
 }
 
@@ -36,5 +44,9 @@
   .hero-content {
     width: 1200px;
     margin: 0 auto;
+  }
+
+  .hero-content > h1 {
+    font-size: 48px;
   }
 }
